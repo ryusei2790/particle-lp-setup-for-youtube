@@ -41,7 +41,16 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
 /**
  * ここからパーティクルを記述
+ * 
  */
+const donutParticlesGeometry = new THREE.TorusGeometry(2.8, 0.7, 16, 100)
+
+
+const donutParticlesMaterial = new THREE.PointsMaterial({
+  size: 0.023,
+});
+
+const donutParticles = new 
 
 //カメラ制御
 const controls = new OrbitControls(camera, canvas);
